@@ -24,8 +24,8 @@ function Project({
     return (
         <Card className="h-full bg-zinc-950 border-dotted border-2 flex flex-col items-center justify-between">
             <CardHeader>
-                <CardTitle className="text-4xl text-purple-300">{title}</CardTitle>
-                <CardDescription className="text-xl text-white">{description}</CardDescription>
+                <CardTitle className="text-center text-4xl text-purple-300">{title}</CardTitle>
+                <CardDescription className="text-xl text-white text-center">{description}</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col">
                 <div className="w-full">

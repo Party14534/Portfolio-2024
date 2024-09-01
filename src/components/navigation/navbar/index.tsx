@@ -26,6 +26,7 @@ const  Navbar = () => {
                 <div className="desktopMenu">
                 <Link href='/' className="desktopMenuListItem">Home</Link>
                 <Link href='/projects' className="desktopMenuListItem">Projects</Link>
+                <Link href='/resume' className="desktopMenuListItem">Resume</Link>
                 </div>
             </div>
           
@@ -39,6 +40,7 @@ const  Navbar = () => {
             <div className="navMenu" style={{display: showMenu? 'flex':'none'}}>
                 <Link href='/' className="desktopMenuListItem">Home</Link>
                 <Link href='/projects' className="desktopMenuListItem">Projects</Link>
+                <Link href='/resume' className="desktopMenuListItem">Resume</Link>
             </div>
         </nav>
       );
