@@ -1,10 +1,13 @@
 "use client";
 import React, { useEffect, useState } from 'react';
+import { redirect } from 'next/navigation'
+import Link from 'next/link';
+
 import icon from './../../../../public/catIcon.png';
 import contactImage from './../../../../public/emailIcon.png'
 import menu from './../../../../public/menuIcon.png'
 import "./navbar.css"
-import Link from 'next/link';
+import toast from 'react-hot-toast';
 
 
 const  Navbar = () => {
@@ -18,10 +21,22 @@ const  Navbar = () => {
         window.addEventListener("resize", hideMenu);
     }, []);
 
+    function goHome() {
+        redirect('/')        
+    }
+
+    function contactMe() {
+        //window.open('mailto:zachariahdellimore03@gmail.com')
+        navigator.clipboard.writeText('zachariahdellimore03@gmail.com')
+        toast.success("Email Copied to Clipboard")
+    }
+
     return (
         <nav className="navbar">
-            <img src={icon.src} alt="Logo" className="logo" />
-          
+            <Link href='/'>
+                <img src={icon.src} alt="Logo" onClick={goHome} className="logo" />
+            </Link>
+
             <div className='navSection'>
                 <div className="desktopMenu">
                 <Link href='/' className="desktopMenuListItem">Home</Link>
@@ -30,9 +45,7 @@ const  Navbar = () => {
                 </div>
             </div>
           
-            <button className="desktopMenuBtn" onClick={() => {
-            document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'});
-          }}>
+            <button className="desktopMenuBtn" onClick={contactMe}>
                 <img src={contactImage.src} alt="" className="desktopMenuImg" />Contact Me
             </button>
 

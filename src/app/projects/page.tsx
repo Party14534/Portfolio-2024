@@ -20,7 +20,7 @@ export default function Home() {
             style={BackgroundImageStyle}>
             <div className="flex flex-col items-center justify-center w-[80%] h-[50%] pb-20">
                 <span className="lg:text-4xl sm:text-2xl font-semibold text-white text-center pb-2">My Projects</span>
-                <Carousel className="w-full pb-4" opts={{ loop: true }}>
+                <Carousel className="w-[80%] pb-4" opts={{ loop: true }}>
                     <CarouselContent className="">
                         <CarouselItem className="flex w-full justify-center items-center">
                             <Project 
