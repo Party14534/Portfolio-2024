@@ -16,12 +16,13 @@ const buildDescription: string = "BuildFromBat is a C++ build tool that scans yo
 
 export default function Home() {    
     return (
-        <main className="fixed flex flex-col items-center justify-center h-screen w-full overflow-hidden"
+        <main className="flex flex-col h-screen w-full items-center justify-center overflow-hidden"
             style={BackgroundImageStyle}>
-            <div className="flex flex-col items-center justify-center pb-20">
-                <Carousel className="w-full max-w-lg flex justify-content items-center">
-                    <CarouselContent>
-                        <CarouselItem>
+            <div className="flex flex-col items-center justify-center w-[80%] h-[50%] pb-20">
+                <span className="lg:text-4xl sm:text-2xl font-semibold text-white text-center pb-2">My Projects</span>
+                <Carousel className="w-full pb-4" opts={{ loop: true }}>
+                    <CarouselContent className="">
+                        <CarouselItem className="flex w-full justify-center items-center">
                             <Project 
                                 title="ZTRIS: Terminal Tetris" 
                                 description={tetrisDescription}

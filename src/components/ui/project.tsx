@@ -22,23 +22,21 @@ function Project({
     alt
 }: ProjectProps) {
     return (
-        <Card className="h-full bg-zinc-950 border-dotted border-2 flex flex-col items-center justify-between">
+        <Card className="flex flex-col h-[80vh] items-center justify-center bg-zinc-950 border-dotted border-2">
             <CardHeader>
-                <CardTitle className="text-center text-4xl text-purple-300">{title}</CardTitle>
-                <CardDescription className="text-xl text-white text-center">{description}</CardDescription>
+                <CardTitle className="text-center lg:text-4xl sm:text-2xl text-purple-300">{title}</CardTitle>
+                <CardDescription className="lg:text-xl sm:text-md text-white text-center">{description}</CardDescription>
             </CardHeader>
-            <CardContent className="flex flex-col">
-                <div className="w-full">
+            <CardContent className="relative aspect-square w-[95%]">
                     <Image 
-                        className=""
                         src={img}
                         alt={alt}
-                        style= {{
-                            height: '100%',
-                            width: 'auto'
+                        placeholder="blur"
+                        fill
+                        style={{
+                            objectFit: 'contain',
                         }}
                     />
-                </div>
             </CardContent>
             <CardFooter>
                 <Button asChild className='flex flex-row gap-2 bg-white max-w-40 min-h-4 my-4'>
