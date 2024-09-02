@@ -33,6 +33,7 @@ function Project({
                         alt={alt}
                         placeholder="blur"
                         fill
+                        priority
                         style={{
                             objectFit: 'contain',
                         }}
