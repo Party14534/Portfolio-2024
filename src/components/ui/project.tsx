@@ -22,12 +22,12 @@ function Project({
     alt
 }: ProjectProps) {
     return (
-        <Card className="flex flex-col h-[80vh] items-center justify-center bg-zinc-950 border-dotted border-2">
+        <Card className="flex flex-col h-[80vh] w-[90%] py-8 items-center justify-center bg-zinc-950 border-dotted border-2">
             <CardHeader>
                 <CardTitle className="text-center lg:text-4xl sm:text-2xl text-purple-300">{title}</CardTitle>
                 <CardDescription className="lg:text-xl sm:text-md text-white text-center">{description}</CardDescription>
             </CardHeader>
-            <CardContent className="relative aspect-square w-[95%]">
+            <CardContent className="relative aspect-square w-[95%] h-[70%]">
                     <Image 
                         src={img}
                         alt={alt}

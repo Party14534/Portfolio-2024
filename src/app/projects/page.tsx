@@ -31,7 +31,7 @@ export default function Home() {
                                 alt="ZTRIS: Terminal Tetris Image"
                             />
                         </CarouselItem>
-                        <CarouselItem>
+                        <CarouselItem className="flex w-full justify-center items-center">
                             <Project 
                                 title="Chess Game" 
                                 description={chessDescription} 
@@ -40,7 +40,7 @@ export default function Home() {
                                 alt="Chess Game Image"
                             />
                         </CarouselItem>
-                        <CarouselItem>
+                        <CarouselItem className="flex w-full justify-center items-center">
                             <Project 
                                 title="BuildFromBat" 
                                 description={buildDescription}
@@ -49,7 +49,7 @@ export default function Home() {
                                 alt="BuildFromBat Image"
                             />
                         </CarouselItem>
-                        <CarouselItem>
+                        <CarouselItem className="flex w-full justify-center items-center">
                             <Project 
                                 title="Wordle Inspired Game" 
                                 description={wordleDescription}
@@ -58,7 +58,7 @@ export default function Home() {
                                 alt="Wordle Project Image"
                             />
                         </CarouselItem>
-                        <CarouselItem>
+                        <CarouselItem className="flex w-full justify-center items-center">
                             <Project 
                                 title="Network Packet Loss Analyzer" 
                                 description={pingDescription}
